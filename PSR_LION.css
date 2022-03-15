@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.container {
+    width: 380px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid rgb(43, 43, 43);
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+.title {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 14px 0;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+.title h5 {
+    margin: 0 auto;
+}
+.title h5::after{
+    content: url(PSR_LION_img/close.png);
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+.inner {
+    margin: 20px 20px;
+}
+.inner .middle p:first-child {
+    font-size: 15px;
+    font-weight: 500;
+}
+.inner .middle .loginState {
+    color: rgb(116, 116, 116);
+    font-size: 13px;
+    display: flex;
+    margin-bottom: 15px;
+}
+.inner .middle .loginState img {
+    width: 17px;
+    height: 17px;
+    align-items: center;
+    margin-right: 5px;
+}
+.inner ul, li{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+.inner ul {
+    width: fit-content;
+    font-size: 11px;
+    display: flex;
+    flex-direction: row nowrap;
+    padding: 10px;
+}
+.inner ul>li>a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+    display: inline-block;
+}
+.inner ul>li::after {
+    content: "|";
+    float: right;
+    display: block;
+}
+.inner ul>li:last-child::after{
+    content: "";
+}
+.inner .loginBtn {
+    width: 100%;
+    padding: 12px 0;
+    color: #f5f5f5;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(56, 102, 228);
+    border-radius: 5px;
+    cursor: pointer;
+}
+hr {
+    border: 0;
+    height: 0;
+    margin: 20px 0;
+    border-top: 1px solid rgb(197, 197, 197);
+}
+.socialLogin{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgb(255, 255, 255);
+}
+.socialLogin a.btn {
+    display: block;
+    position: relative;
+    padding: 13px 0;
+    color: rgb(88, 88, 88);
+    font-size: 13px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration : none;
+}
+.socialLogin .googleBtn {
+    border: 1px solid rgb(88, 88, 88);
+}
+a.googleBtn::before {
+    content: url(PSR_LION_img/icon_google.png);
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+.socialLogin .facebookBtn {
+    border: 1px solid rgb(28, 170, 226);
+}
+a.facebookBtn::before {
+    content: url(PSR_LION_img/icon_facebook.png);
+    position: absolute;
+    left: 15px;
+    top: 11px;
+}
+.socialLogin .naverBtn {
+    border: 1px solid rgb(12, 228, 59);
+}
+a.naverBtn::before {
+    content: url(PSR_LION_img/icon_naver.png);
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+.socialLogin .kakaoBtn {
+    border: 1px solid rgb(238, 216, 22);
+}
+a.kakaoBtn::before {
+    content: url(PSR_LION_img/icon_kakao.png);
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
