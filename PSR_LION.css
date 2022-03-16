@@ -29,6 +29,7 @@ body {
     transform: scale(.7);
     right: 15px;
     top: 13px;
+    cursor: pointer
 }
 .inner {
     margin: 20px 20px;
@@ -48,6 +49,7 @@ body {
     height: 17px;
     align-items: center;
     margin-right: 5px;
+    cursor: pointer;
 }
 .inner ul, li{
     margin: 0 auto;
