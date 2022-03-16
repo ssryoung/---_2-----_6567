@@ -26,6 +26,7 @@ body {
 .title h5::after{
     content: url(PSR_LION_img/close.png);
     position: absolute;
+    transform: scale(.7);
     right: 15px;
     top: 13px;
 }
@@ -85,11 +86,26 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
-hr {
-    border: 0;
-    height: 0;
-    margin: 20px 0;
-    border-top: 1px solid rgb(197, 197, 197);
+.line {
+	display: flex;
+    flex-basis: 100%;
+	align-items: center;
+	color: rgb(116, 116, 116);
+	font-size: 10px;
+	margin: 5px 0px;
+}
+.line::before, .line::after {
+	content: "";
+	flex-grow: 1;
+	background: rgb(116, 116, 116);
+	height: 1px;
+	margin: 15px 0px;
+}
+.line::before {
+    margin-right: 10px;
+}
+.line::after {
+    margin-left: 10px;
 }
 .socialLogin{
     width: 100%;
